@@ -23,6 +23,8 @@ GameObject:
   - component: {fileID: 65607973238340486}
   - component: {fileID: 23622445151083596}
   - component: {fileID: 114330646367957862}
+  - component: {fileID: 114348426756319288}
+  - component: {fileID: 54763632780688410}
   m_Layer: 0
   m_Name: Bullet
   m_TagString: Untagged
@@ -84,6 +86,21 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1529718691806292}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!54 &54763632780688410
+Rigidbody:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1529718691806292}
+  serializedVersion: 2
+  m_Mass: 0.0000001
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!65 &65607973238340486
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -109,3 +126,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 30
   lifeTime: 5
+--- !u!114 &114348426756319288
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1529718691806292}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c588f3d2730294641816fcf3d4e1a561, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShootingTargetTagName: ShootingTarget
