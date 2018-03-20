@@ -26,6 +26,6 @@ public class Fire : MonoBehaviour {
     private void FireNow()
     {
         Instantiate(BulletPrefab, Gun.transform.position,Gun.transform.rotation, BulletParent);
-      
+        Gun.GetComponent<AudioSource>().Play();
     }
 }
