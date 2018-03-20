@@ -1233,6 +1233,11 @@ Prefab:
       propertyPath: BulletParent
       value: 
       objectReference: {fileID: 923060848}
+    - target: {fileID: 82138015730528392, guid: db192f02342e4f04d875bc7b925f3385,
+        type: 2}
+      propertyPath: spreadCustomCurve.m_RotationOrder
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: db192f02342e4f04d875bc7b925f3385, type: 2}
   m_IsPrefabParent: 0

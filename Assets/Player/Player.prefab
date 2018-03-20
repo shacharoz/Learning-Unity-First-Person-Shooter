@@ -435,6 +435,8 @@ MonoBehaviour:
   BulletParent: {fileID: 0}
   BulletPrefab: {fileID: 1529718691806292, guid: daffaf45d6f94f64eb1493347745434c,
     type: 2}
+  RocketPrefab: {fileID: 1261693021855270, guid: 36ca74baadf164b4aa3bc067f85a0ad7,
+    type: 2}
 --- !u!124 &124631032435605796
 Behaviour:
   m_ObjectHideFlags: 1

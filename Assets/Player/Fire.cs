@@ -8,8 +8,12 @@ public class Fire : MonoBehaviour {
     public Transform BulletParent;
     public GameObject BulletPrefab;
 
-	// Use this for initialization
-	void Start () {
+    public GameObject RocketPrefab;
+
+
+
+    // Use this for initialization
+    void Start () {
 		
 	}
 	
@@ -21,11 +25,21 @@ public class Fire : MonoBehaviour {
             FireNow();
         }
 
+        if (Input.GetKeyDown(KeyCode.Alpha1))
+        {
+            FireNowRocket();
+        }
     }
 
     private void FireNow()
     {
         Instantiate(BulletPrefab, Gun.transform.position,Gun.transform.rotation, BulletParent);
+        Gun.GetComponent<AudioSource>().Play();
+    }
+
+    private void FireNowRocket()
+    {
+        Instantiate(RocketPrefab, Gun.transform.position, Gun.transform.rotation, BulletParent);
         Gun.GetComponent<AudioSource>().Play();
     }
 }
