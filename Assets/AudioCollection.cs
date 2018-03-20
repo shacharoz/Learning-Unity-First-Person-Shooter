@@ -11,7 +11,7 @@ public class AudioCollection : MonoBehaviour {
 
     public void PlayRandom()
     {
-        int selectedClipIndex = Random.Range(0, AudioSounds.Count );
+        int selectedClipIndex = Random.Range(0, AudioSounds.Count);
         _player.clip = AudioSounds[selectedClipIndex];
         _player.Play();
     }
