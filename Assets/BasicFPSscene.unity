@@ -950,7 +950,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4692737224920430, guid: 86ca1f2118c75704597e9fd7cf8bd7b5, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -4.13
+      value: -4.33
       objectReference: {fileID: 0}
     - target: {fileID: 4692737224920430, guid: 86ca1f2118c75704597e9fd7cf8bd7b5, type: 2}
       propertyPath: m_LocalPosition.y
@@ -958,7 +958,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4692737224920430, guid: 86ca1f2118c75704597e9fd7cf8bd7b5, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 10.35
+      value: 14.1
       objectReference: {fileID: 0}
     - target: {fileID: 4692737224920430, guid: 86ca1f2118c75704597e9fd7cf8bd7b5, type: 2}
       propertyPath: m_LocalRotation.x
@@ -979,15 +979,6 @@ Prefab:
     - target: {fileID: 4692737224920430, guid: 86ca1f2118c75704597e9fd7cf8bd7b5, type: 2}
       propertyPath: m_RootOrder
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 135736544283387932, guid: 86ca1f2118c75704597e9fd7cf8bd7b5,
-        type: 2}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1910056917199426, guid: 86ca1f2118c75704597e9fd7cf8bd7b5, type: 2}
-      propertyPath: m_TagString
-      value: ShootingTarget
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 86ca1f2118c75704597e9fd7cf8bd7b5, type: 2}
@@ -1250,23 +1241,6 @@ Transform:
   m_PrefabParentObject: {fileID: 4692737224920430, guid: 86ca1f2118c75704597e9fd7cf8bd7b5,
     type: 2}
   m_PrefabInternal: {fileID: 1122800199}
---- !u!1 &1660465623 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1758078567032486, guid: db192f02342e4f04d875bc7b925f3385,
-    type: 2}
-  m_PrefabInternal: {fileID: 1556016472}
---- !u!114 &1660465624
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1660465623}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 14fdea7b7c419d5449abc0209dabfa8d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ShootingTargetScore: 100
 --- !u!4 &1704647854 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4692737224920430, guid: 86ca1f2118c75704597e9fd7cf8bd7b5,

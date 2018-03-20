@@ -25,8 +25,16 @@ public class BulletCollisionManager : MonoBehaviour {
         {
             _player.GetComponent<ScoreManager>().HitShootingTarget();
 
-            Destroy(other.gameObject);
             Destroy(this.gameObject);
+
+            //Destroy(other.gameObject);
+            //other.GetComponent<AudioSource>().Play();
+            other.gameObject.GetComponent<KillAfter>().KillNow();
+
+
         }
+
+
     }
+    
 }
