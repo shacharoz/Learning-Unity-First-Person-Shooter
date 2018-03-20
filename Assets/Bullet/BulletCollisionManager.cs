@@ -31,7 +31,6 @@ public class BulletCollisionManager : MonoBehaviour {
             //other.GetComponent<AudioSource>().Play();
             other.gameObject.GetComponent<KillAfter>().KillNow();
 
-
         }
 
 
