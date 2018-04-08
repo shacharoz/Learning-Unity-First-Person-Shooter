@@ -1266,11 +1266,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 82247506110280228, guid: 86ca1f2118c75704597e9fd7cf8bd7b5,
-        type: 2}
-      propertyPath: spreadCustomCurve.m_RotationOrder
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 86ca1f2118c75704597e9fd7cf8bd7b5, type: 2}
   m_IsPrefabParent: 0
@@ -1805,39 +1800,6 @@ Prefab:
       propertyPath: BulletParent
       value: 
       objectReference: {fileID: 923060848}
-    - target: {fileID: 82138015730528392, guid: db192f02342e4f04d875bc7b925f3385,
-        type: 2}
-      propertyPath: spreadCustomCurve.m_RotationOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114191471366540222, guid: db192f02342e4f04d875bc7b925f3385,
-        type: 2}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114788687868441680, guid: db192f02342e4f04d875bc7b925f3385,
-        type: 2}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114263317686353698, guid: db192f02342e4f04d875bc7b925f3385,
-        type: 2}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114409247674555776, guid: db192f02342e4f04d875bc7b925f3385,
-        type: 2}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4741387891712864, guid: db192f02342e4f04d875bc7b925f3385, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: -2.21
-      objectReference: {fileID: 0}
-    - target: {fileID: 1758078567032486, guid: db192f02342e4f04d875bc7b925f3385, type: 2}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: db192f02342e4f04d875bc7b925f3385, type: 2}
   m_IsPrefabParent: 0

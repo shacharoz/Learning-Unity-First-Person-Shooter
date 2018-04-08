@@ -8,10 +8,11 @@ public class BulletCollisionManager : MonoBehaviour {
 
     private GameObject _player;
 
+    public UnityEngine.Events.UnityEvent OnHit;
+
     // Use this for initialization
     void Start () {
         _player = GameObject.Find("Player");
-
     }
 	
 	// Update is called once per frame
@@ -23,17 +24,14 @@ public class BulletCollisionManager : MonoBehaviour {
     {
         if (other.tag == ShootingTargetTagName)
         {
+            OnHit.Invoke();
+
             _player.GetComponent<ScoreManager>().HitShootingTarget();
 
             Destroy(this.gameObject);
 
-            //Destroy(other.gameObject);
-            //other.GetComponent<AudioSource>().Play();
             other.gameObject.GetComponent<KillAfter>().KillNow();
 
-        }
-
-
+        }   
     }
-    
 }

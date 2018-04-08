@@ -9,10 +9,17 @@ public class KillAfter : MonoBehaviour {
     private bool _isStarted;
     private float _startTime;
 
+    public bool StartImmediately = false;
+
     // Use this for initialization
     void Start () {
         _isStarted = false;
         _startTime = 0;
+
+        if (StartImmediately == true)
+        {
+            KillNow();
+        }
     }
 	
 	// Update is called once per frame

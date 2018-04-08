@@ -25,6 +25,7 @@ GameObject:
   - component: {fileID: 114330646367957862}
   - component: {fileID: 114348426756319288}
   - component: {fileID: 54763632780688410}
+  - component: {fileID: 114361984002895952}
   m_Layer: 0
   m_Name: Bullet
   m_TagString: Untagged
@@ -138,3 +139,31 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ShootingTargetTagName: ShootingTarget
+  OnHit:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 114361984002895952}
+        m_MethodName: SpawnNow
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+--- !u!114 &114361984002895952
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1529718691806292}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc337898ccf78d64585994374b85a833, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EffectPrefabToSpawn: {fileID: 100000, guid: fabdd45f98921b547b28c84c0818d2a4, type: 2}
