@@ -4,6 +4,8 @@
 ![alt text](https://raw.githubusercontent.com/shacharoz/Learning-Unity-First-Person-Shooter/master/Builds/scene1.png)
 
 
+![alt text](https://raw.githubusercontent.com/shacharoz/Learning-Unity-First-Person-Shooter/master/Builds/scene2.png)
+
 
 36 hours workshop to learn what Unity platform has to offer.
 
