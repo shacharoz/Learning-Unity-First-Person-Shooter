@@ -18,9 +18,6 @@ public class EffectSpawner : MonoBehaviour {
 
     public void SpawnNow()
     {
-        transform.LookAt(GameObject.FindGameObjectWithTag("Player").transform);
-        Vector3 pos = transform.position - new Vector3(0,0,transform.localScale.z);
-        Instantiate(EffectPrefabToSpawn, transform.position, transform.rotation);
-        
+        Instantiate(EffectPrefabToSpawn, transform.position, transform.rotation);        
     }
 }

@@ -25,7 +25,7 @@ public class BulletCollisionManager : MonoBehaviour {
         if (other.tag == ShootingTargetTagName)
         {
             OnHit.Invoke();
-
+                
             _player.GetComponent<ScoreManager>().HitShootingTarget();
 
             Destroy(this.gameObject);
