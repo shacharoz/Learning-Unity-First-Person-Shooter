@@ -17,8 +17,11 @@ public class BulletFly : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+        //fore the bullet forward
         transform.Translate(Vector3.forward * Time.deltaTime * speed);
 
+
+        //destroy object after X seconds 
         if (Time.time - _startTime > lifeTime)
         {
             Destroy(this.gameObject);
