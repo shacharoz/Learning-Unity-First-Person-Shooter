@@ -5,6 +5,8 @@ public class Movement : MonoBehaviour {
 
     public float _speed;
 
+    public string JumpTrigger = "";
+
     // Use this for initialization
     void Start () {
 
@@ -15,6 +17,16 @@ public class Movement : MonoBehaviour {
     {
         //controlling the player up and down, left and right
         Move();
+
+
+        //jumping
+        if (JumpTrigger != "" && GetComponent<Animator>())
+        {
+            if (Input.GetKeyDown(KeyCode.L))
+            {
+                GetComponent<Animator>().SetTrigger(JumpTrigger);
+            }
+        }
 
     }
 

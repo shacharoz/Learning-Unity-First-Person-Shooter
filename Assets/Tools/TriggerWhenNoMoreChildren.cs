@@ -3,7 +3,7 @@ using UnityEngine.Events;
 
 public class TriggerWhenNoMoreChildren : MonoBehaviour {
 
-    public UnityEvent NoMoreChildren;
+    public UnityEngine.Events.UnityEvent NoMoreChildren;
 
     private bool triggeredOnce;
 
@@ -14,10 +14,22 @@ public class TriggerWhenNoMoreChildren : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (!triggeredOnce && transform.childCount == 0)
+		if (!triggeredOnce && GetComponent<Transform>().childCount == 0)
         {
-            NoMoreChildren.Invoke();
+            // NoMoreChildren.Invoke();
             triggeredOnce = true;
+
+
+            Debug.Log("game over");
         }
 	}
+
+
+    public void CheckNow()
+    {
+        if (GetComponent<Transform>().childCount == 0)
+        {
+            Debug.Log("game over");
+        }
+    }
 }
