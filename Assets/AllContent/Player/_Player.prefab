@@ -111,7 +111,7 @@ GameObject:
   - component: {fileID: 114263317686353698}
   - component: {fileID: 114409247674555776}
   m_Layer: 0
-  m_Name: Player
+  m_Name: _Player
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -485,6 +485,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _speed: 5
+  JumpTrigger: 
 --- !u!114 &114263317686353698
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -519,11 +520,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c979e0b42c7b8040ab9bc666e83d585, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Gun: {fileID: 4545809175979894}
-  BulletParent: {fileID: 0}
+  GunShaft: {fileID: 4545809175979894}
   BulletPrefab: {fileID: 1529718691806292, guid: daffaf45d6f94f64eb1493347745434c,
-    type: 2}
-  RocketPrefab: {fileID: 1261693021855270, guid: 36ca74baadf164b4aa3bc067f85a0ad7,
     type: 2}
 --- !u!124 &124631032435605796
 Behaviour:

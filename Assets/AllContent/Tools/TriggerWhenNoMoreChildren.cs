@@ -16,7 +16,7 @@ public class TriggerWhenNoMoreChildren : MonoBehaviour {
 	void Update () {
 		if (!triggeredOnce && GetComponent<Transform>().childCount == 0)
         {
-            // NoMoreChildren.Invoke();
+            NoMoreChildren.Invoke();
             triggeredOnce = true;
 
 
