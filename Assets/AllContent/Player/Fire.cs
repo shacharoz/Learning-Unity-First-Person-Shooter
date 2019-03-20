@@ -13,11 +13,14 @@ public class Fire : MonoBehaviour {
     private KeyCode KeyForRocket = KeyCode.Alpha1;
     private GameObject RocketPrefab;
 
+    public int  limitShooting=0;
+    private int _bulletsLeft = 0;
 
+    public UnityEngine.UI.Text ammoLimitField;
 
     // Use this for initialization
     void Start () {
-		
+        _bulletsLeft = limitShooting;
 	}
 	
 	// Update is called once per frame
@@ -36,13 +39,29 @@ public class Fire : MonoBehaviour {
 
     private void FireNow()
     {
-        Instantiate(BulletPrefab, GunShaft.transform.position,GunShaft.transform.rotation, BulletParent);
-        GunShaft.GetComponent<AudioSource>().Play();
+        if (limitShooting > 0)
+        {
+            _bulletsLeft -= 1;
+
+
+            if (_bulletsLeft <= 0)
+            {
+                ammoLimitField.text = "0";
+                return;
+            }
+
+            ammoLimitField.text = _bulletsLeft.ToString();
+
+        }
+        
+
+        Instantiate(BulletPrefab, GunShaft.transform.position, GunShaft.transform.rotation, BulletParent);
+        if (GunShaft.GetComponent<AudioSource>())  GunShaft.GetComponent<AudioSource>().Play();
     }
 
     private void FireNowRocket()
     {
         Instantiate(RocketPrefab, GunShaft.transform.position, GunShaft.transform.rotation, BulletParent);
-        GunShaft.GetComponent<AudioSource>().Play();
+        if (GunShaft.GetComponent<AudioSource>()) GunShaft.GetComponent<AudioSource>().Play();
     }
 }

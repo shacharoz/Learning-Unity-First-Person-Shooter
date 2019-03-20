@@ -5,9 +5,9 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
+  - enabled: 1
     path: Assets/BasicFPSscene.unity
     guid: 5fd4bb5b089fcf24186b821519d0d869
   - enabled: 1
-    path: Assets/demo start.unity
-    guid: f2e47eb05b4c0644da0969ee8b014e56
+    path: Assets/Car Race Shooting.unity
+    guid: 29bc9a4f251b9a946a72fb84cc65b946
